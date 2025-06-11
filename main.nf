@@ -43,28 +43,7 @@ params.MakeDb_novel.inferjunction = "false"
 params.MakeDb_novel.partial = "false"
 params.MakeDb_novel.name_alignment = "novel"
 
-params.IgBlastn_genotype.num_threads = params.nproc
-params.IgBlastn_genotype.ig_seqtype = "TCR"
-params.IgBlastn_genotype.outfmt = "MakeDb"
-params.IgBlastn_genotype.num_alignments_V = "10"
-params.IgBlastn_genotype.num_alignments_D = "3"
-params.IgBlastn_genotype.num_alignments_J = "3"
-params.IgBlastn_genotype.domain_system = "imgt"
-params.IgBlastn_genotype.D_penalty = -1
 
-params.MakeDb_genotype.failed = "true"
-params.MakeDb_genotype.format = "airr"
-params.MakeDb_genotype.regions = "default"
-params.MakeDb_genotype.extended = "true"
-params.MakeDb_genotype.asisid = "false"
-params.MakeDb_genotype.asiscalls = "false"
-params.MakeDb_genotype.inferjunction = "false"
-params.MakeDb_genotype.partial = "false"
-params.MakeDb_genotype.name_alignment = "Final"
-
-params.trb_deletion.gene_usages_file = "${params.projectDir}/trbv_${params.library}_usage.tsv"
-
-params.ogrdbstats_report.chain = "TRBV"
 
 if (!params.airr_seq){params.airr_seq = ""} 
 if (!params.v_germline_file){params.v_germline_file = ""} 
